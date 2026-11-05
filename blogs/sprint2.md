@@ -9,24 +9,30 @@ Ik heb nagedacht over de mogelijkheden, en om een virtuele omgeving te maken zij
 ## Verschillende visuele vormgeving
 
 ### 2D afbeeldingen
-Ik heb on
-
-### 3D omgeving
-Ik heb dit onderzocht en gekeken wat de leukste maar ook meest simpele optie is.
-
-Als we 
+Ik had geprobeerd om met davinci resolve wat 2D animaties te maken.. Het leek me cool om een soort van paralax effect te maken in games, maar hier was ik niet goed in, en vond ik het niet leuk.. Dus toen was ik gestopt.
 
 
 
 
 ### TouchDesigner
-Van de docent die de immersive room had uitgelegd was touchdesigner iets wat veel studenten gebruikte om reactiviteit te bouwen. Touchdesigner is een programma waarbij je "live" beelden geneerd. Het is eigenlijk een super coole programma. Je kan een AI tracking systeem koppelen aan touchdesigner en op basis van handsignalen bepaalde effecten triggeren. Het probleem is, er is best wel een diepe learning curve om het te begrijpen. Omdat ik niet van plan ben ooit touchdesigner te gebruiken buiten dit project, valt dit voor mij af. 
+Van de docent die de immersive room had uitgelegd was touchdesigner iets wat veel studenten gebruikte om reactiviteit te bouwen. Touchdesigner is een programma waarbij je "live" beelden geneerd. Het is eigenlijk een super coole programma. Je kan een AI tracking systeem koppelen aan touchdesigner en op basis van handsignalen bepaalde effecten triggeren. Het probleem is, er is best wel een diepe learning curve om het te begrijpen. 
+
+Omdat mijn team niet super veel interesse lijkt te hebben in het visuele ontwerp gedeelte, leek het het beste om iets te kiezen waarbij ik zelf ook gemotiveerd ben. Touchdesigner is not it. 
+
+![image](../images/sprint2/touchdesigner.png)
+
+### 3D omgeving
+Ik heb dit onderzocht en gekeken wat de leukste maar ook meest simpele optie is.
+Omdat ik toch gamedev wil leren kan ik blender downloaden. Ik hoef niet te tekenen en kan kant en klare modellen gebruiken.
+
 
 
 # 3D scene maken
 Mijn eerste idee was enkel om blender te gebruiken om videos af te spelen van de immersive environment, om te zien hoe dat er virtueel uit ziet zonder dat we die kamer in hoeven te huren. Want we kunnen gewoon videos opnemen en de videos projecteren op blender. Het coole hiervan is, we kunnen simpele 3D scenarios bouwen met kant en klare 3D modellen, deze direct opnemen in het programma, en zo een omgeving creeren. Doordat het 3D is krijgt het systeem automatisch een gevoel van diepte. En omdat het videos zijn zou het makkelijker zijn om voor de opdrachtgever om te runnen. 
 
 Daarnaast, omdat je kan scripten in blender, kan je een soort van demo omgeving creeren.
+
+
 
 ## Immersive room nabouwen
 
@@ -49,6 +55,21 @@ Ik had geen werkelijke dimenties van de muur in meters, maar gelukkig is dat nie
 Dat komt niet overeen met de werkelijkheid, maar is ook niet nodig. Het is enkel een test omgeving. Dus nu hebben we dit in blender:
 
 ![image](../images/sprint2/IR_roombuild.png)
+
+
+## Omgeving vinden of bouwen?
+
+Sommige missen textures en zien er daardoor niet goed uit.
+![image](../images/sprint2/touchdesigner.png)
+
+Of sommige zien er enkel goed uit vanuit een enkele perspectief
+![image](../images/sprint2/enkele_kant.png)
+
+
+Zelf modellen zoeken om een ruimte te maken.
+![image](../images/sprint2/chair.png)
+
+
 
 ### Test omgeving creeren voor een video / afbeelding
 Van onze opdrachtgever hebben we een video gekrgen, maar die zijn 3gb en elke keer faalt de teams download...
