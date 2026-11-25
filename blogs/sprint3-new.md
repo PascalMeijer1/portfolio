@@ -1,12 +1,5 @@
 # Sprint 3
 
-Waar ik aan heb gewerkt
-- Muren beelden laten overlopen
-- controller maken voor immersive room
-- Blender schoolruimte maken
-- ANimaties maken
-- shit renderen
-
 ## Recap Sprint 2
 Ons project is een immersieve ervaring waarbij iemand een ervaring kan meemaken die angst geneerd. Een soort van exposure therapie voor mensen met sociale angst. 
 
@@ -154,21 +147,12 @@ Voor de modellen had een teamgenoot al een mannelijke stem met soort van vlaams 
 In een eerdere gesprek met de opdrachtgever benoemde ze dat we een aula of klaslokaal konden maken. Ik had de mogelijkheid om online een standaard klaslokaal te vinden, maar de lokalen zager er super cartoony uit. Ik wou graag ook iets wat op een lokaal van de Hva leek, dus ik had besloten om het na te maken. En dit is goed gelukt want 1 van de testers benoemde "je kan echt zien dat dit een Hva lokaal is, best cool".
 
 ## Animeren
-Dus voor de beelden wou ik graag dat de modellen bewegen. Het is niet super interesant als die enkel op 1 locatie stil zitten.
+Ik ben moe van typen. kheb 4x van dit soort scenes gemaakt op basis van de verhaallijn: 
 
-**Probleem** 
-Ik kan niet animeren. Ik heb nog nooit een mens geanimeerd, maar het leek me wel super leuk om te doen.
+<video src="../images/sprint3/front.mp4" controls playsinline preload="metadata" >
+        Your browser does not support video.
+</video>
 
-**Wat ik heb geleerd**  
-Animeren is zowel leuk en mentaal martelend hahah. Origineel had ik een normale animatie willen maken. Maar uiteindelijk besloot ik "het is een prototype, het hoeft niet geweldig te zijn" en ben ik neergekomen op een stop motion animatie.
-
-
-## Mockup maken
-
-
-
-**Probleem** 
-Ik kan niet animeren. Ik heb nog nooit een mens geanimeerd, maar het leek me wel super leuk om te doen.
 
 
 ## Feedback van het testen
