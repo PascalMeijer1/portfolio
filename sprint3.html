@@ -4,739 +4,1256 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sprint 3 | Development Log</title>
+
+    <title>DevLog — Sprint 3 | ANIMA</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- Navigation -->
     <nav class="navbar">
-        <a href="index.html" class="nav-logo">Development Log</a>
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="sprint1.html">Sprint 1</a>
-            <a href="sprint2.html">Sprint 2</a>
-            <a href="sprint3.html" class="active">Sprint 3</a>
+        <div class="nav-container">
+            <a href="#" class="logo">ANIMA<span>.</span></a>
+
+            <div class="nav-links">
+                <a href="#recap">Terugblik</a>
+                <a href="#proces">Het proces</a>
+                <a href="#controller">Controller</a>
+                <a href="#verhaallijn">Verhaallijn</a>
+                <a href="#testen">Testen</a>
+                <a href="#reflectie">Reflectie</a>
+            </div>
         </div>
     </nav>
 
-    <main class="page-content">
 
-        <!-- HERO -->
-        <header class="hero">
-            <p class="eyebrow">Development Log / Sprint 03</p>
-            <h1>Making immersion work.</h1>
+    <!-- Hero -->
+    <header class="hero">
+        <div class="hero-content">
+
+            <div class="eyebrow">
+                DEVLOG / SPRINT 03
+            </div>
+
+            <h1>
+                Making immersion work.
+            </h1>
+
             <p class="hero-description">
-                Van camera calibratie en een eigen controller tot het bouwen
-                van een volledige verhaallijn voor de immersive room.
+                Van technische experimenten met de immersive room naar
+                een werkende controller, een uitgewerkte verhaallijn
+                en de eerste visuele ervaringen voor ANIMA.
             </p>
+
             <div class="hero-meta">
-                <span>Sprint 03</span>
-                <span>Development & Research</span>
-                <span>Immersive Experience</span>
+                <span>Creative Technology</span>
+                <span>•</span>
+                <span>Sprint 3</span>
             </div>
-        </header>
+
+        </div>
+    </header>
 
 
-        <!-- 01 RECAP SPRINT 2 -->
-        <section class="content-section">
-            <div class="section-heading">
-                <span class="section-number">01</span>
-                <div>
-                    <p class="eyebrow">Previous sprint</p>
-                    <h2>Recap Sprint 2</h2>
-                </div>
-            </div>
+    <main class="content">
+
+
+        <!-- Recap -->
+        <section id="recap" class="section">
+
+            <div class="section-number">01</div>
 
             <div class="section-content">
+
+                <h2>Terugblik op Sprint 2</h2>
+
                 <p>
-                    Ons project is een immersieve ervaring waarbij iemand een
-                    ervaring kan meemaken die angst geneerd. Een soort van
-                    exposure therapie voor mensen met sociale angst.
+                    Ons project is een immersieve ervaring waarbij iemand
+                    een situatie kan meemaken die angst genereert. Een
+                    soort exposuretherapie voor mensen met sociale angst.
                 </p>
 
                 <p>
-                    De opdrachtgever wil heel graag dat we gebruik maken van
-                    de immersive lab van het HvA. Na vorige sprint eenmalig
-                    naar de kamer te zijn geweest. Vorige sprint is ons team
-                    uitgenodigd om de ruimte voor het eerst te zien. Onze
-                    opdrachtgever kon niet aanwezig zijn, maar een medewerker
-                    die veel ervaring heeft met de kamer was aanwezig om onze
-                    vragen te beantwoorden en de aansluiting uit te leggen.
+                    De opdrachtgever wil heel graag dat we gebruikmaken
+                    van het Immersive Lab van de HvA. Vorige sprint zijn
+                    we voor het eerst uitgenodigd om de ruimte te bekijken.
+                    Onze opdrachtgever kon helaas niet aanwezig zijn,
+                    maar een medewerker met veel ervaring met de ruimte
+                    was er om onze vragen te beantwoorden en de aansluitingen
+                    uit te leggen.
                 </p>
 
-                <figure class="image-card large">
-                    <img src="images/sprint1/immersive_studio.png"
-                         alt="De immersive studio van de HvA">
-                    <figcaption>Immersive room</figcaption>
+                <figure class="image-card">
+                    <img
+                        src="../images/sprint1/immersive_studio.png"
+                        alt="De immersive room van de HvA"
+                    >
+                    <figcaption>
+                        Het Immersive Lab van de HvA.
+                    </figcaption>
                 </figure>
 
                 <p>
-                    Op basis van die ervaring had ik een experiment gemaakt
-                    om te zien of het mogelijk is beelden te creeren in
-                    blender. Ik had een bestaande scene gebruikt en een
-                    simpele animatie toegevoegd in blender om beelden te
-                    kunnen opnemen:
+                    Op basis van deze ervaring had ik een experiment gemaakt
+                    om te kijken of het mogelijk was om beelden te creëren
+                    in Blender. Ik heb een bestaande scene gebruikt en
+                    hier een simpele animatie aan toegevoegd om beelden
+                    te kunnen opnemen.
                 </p>
 
                 <figure class="image-card large">
-                    <img src="images/sprint2/animation.gif"
-                         alt="Een animatie gemaakt in Blender">
+                    <img
+                        src="../images/sprint2/animation.gif"
+                        alt="Eerste Blender animatie-experiment"
+                    >
+                    <figcaption>
+                        Mijn eerste experiment met animaties in Blender.
+                    </figcaption>
                 </figure>
 
                 <p>
-                    De uitdaging van de immersive lab is dat er 5 wanden zijn
-                    waar videos tegelijkertijd afspelen. Echter elke wand
-                    speelt een andere video af, en deze videos moeten naadloos
-                    op elkaar aansluiten en dat is moeilijk om voor elkaar
+                    De uitdaging van het Immersive Lab is dat er vijf
+                    wanden zijn waarop tegelijkertijd video's worden
+                    afgespeeld. Elke wand speelt een andere video af.
+                    Deze video's moeten naadloos op elkaar aansluiten,
+                    en dat is best lastig om voor elkaar te krijgen.
+                </p>
+
+                <p>
+                    Om de aansluiting van de vijf video's te testen,
+                    had ik het Immersive Lab in Godot nagebouwd. Het doel
+                    was om mijn Blender-opnames op de verschillende
+                    wanden af te spelen en te kijken of alles goed op
+                    elkaar aansloot. Zo kon ik experimenteren zonder
+                    de echte ruimte honderden keren te hoeven reserveren.
+                </p>
+
+                <figure class="image-card large">
+                    <img
+                        src="../images/sprint2/godot_immersive%20room.png"
+                        alt="Immersive room nagebouwd in Godot"
+                    >
+                    <figcaption>
+                        Mijn eerste digitale testomgeving in Godot.
+                    </figcaption>
+                </figure>
+
+                <p>
+                    Dit was het eindresultaat van Sprint 2. De omgeving
+                    werkte als eerste experiment, maar de video's sloten
+                    nog niet goed op elkaar aan. Dat werd een belangrijk
+                    aandachtspunt voor deze sprint.
+                </p>
+
+            </div>
+        </section>
+
+
+
+        <!-- Process -->
+        <section id="proces" class="section">
+
+            <div class="section-number">02</div>
+
+            <div class="section-content">
+
+                <h2>Het proces</h2>
+
+
+                <!-- Step 1 -->
+                <article class="process-step">
+
+                    <div class="step-label">
+                        <span>STEP 01</span>
+                    </div>
+
+                    <h3>Een betere testomgeving bouwen</h3>
+
+                    <p>
+                        Zoals te zien is in de vorige afbeelding,
+                        sloten de video's op de muren van mijn demo-omgeving
+                        niet goed aan. Hoewel de scene er leuk uitzag,
+                        was het geen goede omgeving om te testen of de
+                        opnames daadwerkelijk goed op elkaar aansloten.
+                    </p>
+
+                    <p>
+                        Om dit sneller en efficiënter te kunnen testen,
+                        wilde ik een omgeving bouwen die volledig
+                        gespecialiseerd was in het controleren van
+                        visuele aansluitingen en proporties.
+                    </p>
+
+                    <p>
+                        Hieronder is te zien hoe de nieuwe testomgeving
+                        eruitziet. Ik heb grid textures op de vloer en
+                        muren geplaatst en objecten in de hoeken van
+                        de verschillende camerabeelden gezet.
+                    </p>
+
+                    <figure class="image-card large">
+                        <img
+                            src="../images/sprint3/calibration_room.png"
+                            alt="Mijn nieuwe calibration room"
+                        >
+                        <figcaption>
+                            De nieuwe testomgeving met grid textures en
+                            referentieobjecten.
+                        </figcaption>
+                    </figure>
+
+                    <h4 class="subheading">
+                        Waarom deze techniek?
+                    </h4>
+
+                    <p>
+                        In game development wordt vaak gebruikgemaakt
+                        van grid textures tijdens het bouwen van
+                        omgevingen. Grid textures zijn niet bepaald mooi,
+                        maar ze worden veel gebruikt om schaalproblemen
+                        en vervormingen in oppervlakken makkelijk te
+                        herkennen.
+                    </p>
+
+                    <p>
+                        Omdat de vakjes van een grid texture overal
+                        dezelfde afmetingen zouden moeten hebben,
+                        kun je snel zien wanneer iets vervormd is.
+                        Dit is perfect om te controleren of de video's
+                        goed op elkaar aansluiten en of de proporties
+                        van de korte en brede muren overeenkomen.
+                    </p>
+
+                </article>
+
+
+
+                <!-- Step 2 -->
+                <article class="process-step">
+
+                    <div class="step-label">
+                        <span>STEP 02</span>
+                    </div>
+
+                    <h3>Blender camera's calibreren</h3>
+
+                    <p>
+                        De reden dat de video's niet goed op elkaar
+                        aansloten, bleek te zijn dat mijn camera's
+                        niet goed waren ingesteld.
+                    </p>
+
+
+                    <h4 class="subheading">
+                        Het probleem
+                    </h4>
+
+                    <p>
+                        De muren van het Immersive Lab hebben geen
+                        consistente proporties. De voor- en achtermuur
+                        zijn net niet vierkant. De linker- en rechtermuur
+                        zijn rechthoekig en de vloer is ook een rechthoek,
+                        maar minder breed dan de zijmuren.
+                    </p>
+
+                    <p>
+                        Voor elke muur is een aparte camera nodig.
+                        Uiteindelijk heb je dus drie verschillende
+                        camera-instellingen die alsnog exact op elkaar
+                        moeten aansluiten.
+                    </p>
+
+                    <p>
+                        En laat ik nou net helemaal niets van camera's
+                        weten...
+                    </p>
+
+                    <figure class="image-card">
+                        <img
+                            src="../images/sprint3/cameras.png"
+                            alt="De verschillende camera's voor de immersive room"
+                        >
+                    </figure>
+
+
+                    <h4 class="subheading">
+                        Belangrijke instellingen
+                    </h4>
+
+                    <p>
+                        Er zijn twee belangrijke instellingen voor
+                        de camera's: FOV en resolutie.
+                    </p>
+
+                    <p>
+                        De resolutie bepaalt hoe groot het beeld is.
+                        Een standaardmonitor heeft bijvoorbeeld een
+                        resolutie van 1920 x 1080 pixels. Dat bepaalt
+                        hoe breed en hoog het beeld is.
+                    </p>
+
+                    <p>
+                        In Blender kan ik ook de resolutie van de
+                        camera's instellen. Het Immersive Lab heeft
+                        drie verschillende resoluties, afhankelijk
+                        van welke muur wordt geprojecteerd:
+                    </p>
+
+                    <ul class="feature-list">
+                        <li>Voor- en achtermuur: 1058 x 799 pixels</li>
+                        <li>Linker- en rechtermuur: 1358 x 799 pixels</li>
+                        <li>Vloer: 1358 x 1058 pixels</li>
+                    </ul>
+
+                    <p>
+                        FOV staat voor Field of View. Dit bepaalt
+                        hoeveel je horizontaal en verticaal kunt zien
+                        door de camera.
+                    </p>
+
+                    <p>
+                        Het probleem met Blender is dat wanneer je de
+                        camera-instellingen aanpast en vervolgens de
+                        resolutie verandert, het hele beeld verandert.
+                        Hierdoor kunnen alle instellingen op papier
+                        correct zijn, terwijl de beelden in werkelijkheid
+                        totaal niet op elkaar aansluiten.
+                    </p>
+
+
+                    <h4 class="subheading">
+                        Originele camera setup
+                    </h4>
+
+                    <p>
+                        Wanneer we mijn originele camera's gebruiken
+                        in de testomgeving, krijgen we het volgende
+                        resultaat:
+                    </p>
+
+                    <figure class="image-card large">
+                        <img
+                            src="../images/sprint3/attempt1.png"
+                            alt="Eerste poging met de originele camera-instellingen"
+                        >
+                        <figcaption>
+                            Attempt 01 — De originele camera-instellingen.
+                        </figcaption>
+                    </figure>
+
+
+                    <h4 class="subheading">
+                        Experimenteren met de camera setup
+                    </h4>
+
+                    <p>
+                        Na vijf pogingen met verschillende instellingen
+                        ben ik uiteindelijk hierop uitgekomen.
+                    </p>
+
+                    <figure class="image-card large">
+                        <img
+                            src="../images/sprint3/attempt5.png"
+                            alt="Vijfde poging met aangepaste camera-instellingen"
+                        >
+                        <figcaption>
+                            Attempt 05 — Een stuk beter, maar nog niet perfect.
+                        </figcaption>
+                    </figure>
+
+                    <p>
+                        Dit was al een stuk beter, maar eigenlijk nog
+                        steeds niet goed genoeg.
+                    </p>
+
+
+                    <h4 class="subheading">
+                        Suspend all logic
+                    </h4>
+
+                    <p>
+                        Ik had inmiddels meerdere dingen uitgeprobeerd
+                        en was al uren bezig. Ik had met AI gekeken
+                        of mijn instellingen klopten, maar niets leek
+                        echt te werken. Het beste resultaat dat ik
+                        behaalde was poging vijf.
+                    </p>
+
+                    <p>
+                        Na een pauze kwam ik ineens op een ander idee.
+                        Wat als ik helemaal geen logica toepas, maar
+                        gewoon de camera's blijf schalen totdat ze
+                        perfect aansluiten op de muren van het
+                        Immersive Lab?
+                    </p>
+
+                    <figure class="image-card large">
+                        <img
+                            src="../images/sprint3/blender_base.png"
+                            alt="Digitale reconstructie van de immersive room in Blender"
+                        >
+                        <figcaption>
+                            De muren van het Immersive Lab nagemaakt in Blender.
+                            De zwarte vlakken zijn de camera's.
+                        </figcaption>
+                    </figure>
+
+                    <p>
+                        Dit zijn de muren van het Immersive Lab,
+                        nagemaakt in Blender. Het zwarte gedeelte
+                        binnen de muren zijn de camera's.
+                    </p>
+
+                    <p>
+                        Ik heb de camera's geselecteerd en letterlijk
+                        gewoon de instellingen aangepast totdat elke
+                        muur perfect in beeld kwam.
+                    </p>
+
+                    <div class="concept-box">
+
+                        <span class="concept-label">
+                            RESULTAAT — ATTEMPT 06
+                        </span>
+
+                        <p>
+                            Het werkte! Soms is het blijkbaar beter
+                            om gewoon even alle logica los te laten
+                            en het probleem visueel op te lossen.
+                        </p>
+
+                        <p>
+                            Dit resultaat is goed genoeg voor het
+                            Immersive Lab. Niet meer aankomen!
+                        </p>
+
+                    </div>
+
+                    <figure class="image-card large">
+                        <img
+                            src="../images/sprint3/attempt6.png"
+                            alt="Succesvolle zesde camera-calibratiepoging"
+                        >
+                        <figcaption>
+                            Attempt 06 — De uiteindelijke camera setup.
+                        </figcaption>
+                    </figure>
+
+
+                    <h4 class="subheading">
+                        Reflectie: wat heb ik geleerd?
+                    </h4>
+
+                    <p>
+                        Tijdens het maken hiervan heb ik opgezocht
+                        hoe camera's werken en wat de verschillende
+                        instellingen precies betekenen.
+                    </p>
+
+                    <p>
+                        Ik heb meerdere keren gezocht naar
+                        "How to adjust Blender camera for immersive wall".
+                        Uiteraard vond ik vooral video's van mensen
+                        die het al gedaan hadden, maar niet uitlegden
+                        hoe ze het precies hadden aangepakt.
+                    </p>
+
+                    <p>
+                        Achteraf was het waarschijnlijk handiger
+                        geweest als ik had gezocht naar
+                        "How to frame a camera to cover an area perfectly".
+                        Dan was ik mogelijk veel eerder uitgekomen
+                        op het idee om de camera's te schalen naar
+                        een digitale versie van de muren, in plaats
+                        van alleen maar met de instellingen te blijven
+                        experimenteren.
+                    </p>
+
+                    <p>
+                        Maar hindsight komt helaas altijd te laat.
+                        Misschien voor de volgende keer :)
+                    </p>
+
+                </article>
+
+            </div>
+        </section>
+
+
+
+        <!-- Controller -->
+        <section id="controller" class="section">
+
+            <div class="section-number">03</div>
+
+            <div class="section-content">
+
+                <h2>De Immersive Controller</h2>
+
+                <p>
+                    Voor het Immersive Lab bestaat een template waarin
+                    precies staat waar elke video moet worden geplaatst
+                    zodat deze goed werkt met de beamers in de ruimte.
+                </p>
+
+                <figure class="image-card large">
+                    <img
+                        src="../images/sprint2/IR_dimensions.jpg"
+                        alt="Template met de afmetingen van de immersive room"
+                    >
+                    <figcaption>
+                        De afmetingen en indeling van het Immersive Lab.
+                    </figcaption>
+                </figure>
+
+                <p>
+                    Uiteindelijk heb ik een eigen applicatie gemaakt
+                    waarmee we de verschillende video's en lagen
+                    kunnen aansturen. Deze applicatie bestaat uit
+                    drie belangrijke onderdelen.
+                </p>
+
+
+                <!-- Storyline -->
+                <h4 class="subheading">
+                    Storyline
+                </h4>
+
+                <p>
+                    Omdat de gebruiker via een microfoon moet praten,
+                    is het onmogelijk om gewoon één video te hebben
+                    die continu afspeelt.
+                </p>
+
+                <p>
+                    We hadden daarom een systeem nodig dat met code
+                    kan bepalen wanneer een video moet stoppen en
+                    wanneer deze weer verder mag gaan nadat de gebruiker
+                    input heeft gegeven.
+                </p>
+
+                <p>
+                    Hiervoor heb ik een Storyline-venster gemaakt.
+                    Dit systeem gebruikt een YAML-bestand waarin de
+                    verhaallijn en alle benodigde video's worden
+                    gedefinieerd.
+                </p>
+
+                <figure class="image-card large">
+                    <img
+                        src="../images/sprint3/storyline.png"
+                        alt="Het Storyline-venster van mijn controller"
+                    >
+                    <figcaption>
+                        De Storyline-editor waarmee de verhaallijn wordt aangestuurd.
+                    </figcaption>
+                </figure>
+
+
+                <!-- Edit Viewer -->
+                <h4 class="subheading">
+                    Edit Viewer
+                </h4>
+
+                <p>
+                    Van meerdere medewerkers had ik gehoord dat het
+                    nogal vervelend kan zijn om alle muren goed
+                    uitgelijnd te krijgen.
+                </p>
+
+                <p>
+                    Dus maakte ik het mezelf lekker makkelijk en
+                    schreef ik code waarmee we live de positie en
+                    grootte van de muren kunnen aanpassen.
+                </p>
+
+                <p>
+                    Ik had namelijk geen zin om telkens heen en weer
+                    te moeten lopen, alleen maar om dingen passend
                     te krijgen.
                 </p>
 
                 <p>
-                    Om de aansluiting van de 5 videos te testen had ik de
-                    immersive lab in godot nagebouwd. Het doel was om mijn
-                    opnames in blender op de wanden af te spelen, en te zien
-                    of ze aansloten. Zo kon ik testen zonder de ruimte 500x
-                    te moeten inhuren.
+                    Dit bleek enorm prettig te werken. De originele
+                    template was namelijk niet correct ingesteld
+                    voor 4K-projectie. Hierdoor konden we live de
+                    dimensies aanpassen zodat elke muur netjes door
+                    onze video's werd bedekt.
                 </p>
 
                 <figure class="image-card large">
-                    <img src="images/sprint2/godot_immersive%20room.png"
-                         alt="De immersive room nagebouwd in Godot">
-                    <figcaption>Dit was het resultaat toen de sprint was afgelopen.</figcaption>
+                    <img
+                        src="../images/sprint3/ViewerEdit.png"
+                        alt="Edit Viewer waarmee de projectievlakken aangepast kunnen worden"
+                    >
+                    <figcaption>
+                        De Edit Viewer — Posities en afmetingen live aanpassen.
+                    </figcaption>
                 </figure>
 
+
+                <!-- Viewer -->
+                <h4 class="subheading">
+                    Viewer
+                </h4>
+
                 <p>
-                    Dit was het eindresultaat van sprint 2.
-                </p>
-            </div>
-        </section>
-
-
-        <!-- 02 TESTOMGEVING -->
-        <section class="content-section">
-            <div class="section-heading">
-                <span class="section-number">02</span>
-                <div>
-                    <p class="eyebrow">Testing environment</p>
-                    <h2>Video's laten aansluiten: testomgeving bouwen</h2>
-                </div>
-            </div>
-
-            <div class="section-content">
-                <p>
-                    Zoals te zien is in de vorige afbeelding sloten de videos
-                    op de muren van de demo omgeving niet goed aan. Terwijl
-                    de scene er leuk uit ziet, is het is geen goede scene om
-                    te testen of de opnames goed op elkaar aansluiten.
+                    Dit is de daadwerkelijke viewer. Het is een
+                    apart venster dat het Immersive Lab gebruikt
+                    om beelden op elke muur te projecteren.
                 </p>
 
                 <p>
-                    Om dit sneller en efficienter te kunnen testen wou ik een
-                    omgeving bouwen die gespecialiseerd is voor het testen
-                    van visuele aansluiting en proporties. Hieronder is te
-                    zien hoe de omgeving eruit ziet. Ik heb grid textures op
-                    de vloer en muur geplaatst en objecten in de hoeken van
-                    de camera's.
+                    Omdat ik niet wist of we uiteindelijk op 1080p
+                    of 4K zouden draaien, heb ik ervoor gekozen
+                    om het venster schaalbaar te maken.
+                </p>
+
+                <p>
+                    Hierdoor kan het automatisch schalen naar
+                    verschillende resoluties, terwijl de aspect ratio
+                    behouden blijft. Dit heeft enorm geholpen,
+                    want we hebben uiteindelijk drie verschillende
+                    resoluties uitgeprobeerd en het werkte iedere
+                    keer gewoon goed.
                 </p>
 
                 <figure class="image-card large">
-                    <img src="images/sprint3/calibration_room.png"
-                         alt="De calibration testomgeving">
-                    <figcaption>De testomgeving</figcaption>
+                    <img
+                        src="../images/sprint3/viewer.png"
+                        alt="De uiteindelijke Immersive Viewer"
+                    >
+                    <figcaption>
+                        De Viewer waarmee de verschillende projectievlakken
+                        worden aangestuurd.
+                    </figcaption>
                 </figure>
 
-                <div class="text-highlight">
-                    <h3>Waarom deze techniek?</h3>
+                <p>
+                    De medewerker van het Lab had een template
+                    waarmee je de vijf video's kunt samenvoegen
+                    tot één video. Maar wij hebben eigenlijk meerdere
+                    lagen nodig.
+                </p>
+
+                <p>
+                    Stel dat we bijvoorbeeld een hartslag op één
+                    van de muren willen tonen en daarna van muur
+                    willen wisselen. Of we willen ondertiteling
+                    op één specifieke muur weergeven.
+                </p>
+
+                <p>
+                    Hiervoor heb ik gekozen om vijf verschillende
+                    areas te maken. Binnen elke area kunnen meerdere
+                    lagen worden weergegeven.
+                </p>
+
+                <p>
+                    Hierdoor is het eenvoudig om bijvoorbeeld een
+                    overlay bovenop een bestaande video te plaatsen,
+                    zonder dat de volledige video opnieuw hoeft
+                    te worden aangepast.
+                </p>
+
+
+                <div class="concept-box">
+
+                    <span class="concept-label">
+                        TECHNISCHE KEUZE
+                    </span>
+
                     <p>
-                        In game development wordt vaak gebruik gemaakt van
-                        grid textures tijdens het bouwen van omgevingen.
-                        Grid textures zijn lelijk, maar worden veel gebruikt
-                        om schaal en problemen in oppervlaktes makkelijk te
-                        herkennen. Doordat grid texture dezelfde formaat zou
-                        moeten zijn, is het makkelijk te zien wanneer iets
-                        vervormt is. Dit is perfect om te zien of de videos
-                        goed op elkaar aansluiten, en of de proprties van de
-                        kort en bredere muren gelijk blijven.
+                        Als ICT'er vind ik het belangrijk om
+                        oplossingen te bouwen waarmee je makkelijk
+                        kunt troubleshooten.
                     </p>
+
+                    <p>
+                        Ik vind het efficiënter om een kleine
+                        functionaliteit te bouwen waarmee je live
+                        aanpassingen kunt maken, dan telkens terug
+                        te moeten naar de ontwikkelomgeving.
+                    </p>
+
+                    <p>
+                        Het project is relatief kort en we zijn
+                        pas halverwege begonnen met het Immersive Lab.
+                        Ik wilde voorkomen dat we steeds moesten
+                        langskomen, ontdekken dat de beelden niet
+                        goed stonden, teruggaan en vervolgens weer
+                        opnieuw moesten beginnen.
+                    </p>
+
+                    <p>
+                        Dankzij deze functionaliteiten konden we
+                        eenvoudig aanpassingen maken en daar direct
+                        notities over bijhouden.
+                    </p>
+
+                    <p>
+                        Het Storyline-gedeelte was daarnaast gewoon
+                        noodzakelijk om alles als één geheel te laten
+                        werken. Deze applicatie wordt uiteindelijk
+                        het brein van het systeem dat alles gezamenlijk
+                        kan aansturen.
+                    </p>
+
                 </div>
+
             </div>
         </section>
 
 
-        <!-- 03 CAMERA CALIBRATIE -->
-        <section class="content-section">
-            <div class="section-heading">
-                <span class="section-number">03</span>
-                <div>
-                    <p class="eyebrow">Technical challenge</p>
-                    <h2>Blender camera calibratie</h2>
-                </div>
-            </div>
+
+        <!-- Storyline -->
+        <section id="verhaallijn" class="section">
+
+            <div class="section-number">04</div>
 
             <div class="section-content">
+
+                <h2>De verhaallijn aanpassen</h2>
+
                 <p>
-                    De reden dat de videos niet goed op elkaar aansluiten
-                    komt omdat mijn camera's niet goed zijn ingesteld.
+                    Voor het Immersive Lab wil onze opdrachtgever,
+                    Barbara, graag één volledig uitgewerkt scenario
+                    waar een gebruiker doorheen kan lopen.
                 </p>
 
-                <h3>Het probleem</h3>
+                <p>
+                    Een teamgenoot had een scenario bedacht.
+                    Mijn taak was om dit scenario visueel uit te werken.
+                </p>
 
                 <p>
-                    De muren van de immersive lab hebben geen consistente
-                    proporties. De voor en achtermuur zijn net niet vierkant.
-                    De linker en zij muur zijn rechhoekig en de vloer is ook
-                    een rechthoek maar minder breed dan de linker en rechter
-                    muur. Voor elke muur is er 1 camera nodig. Met dus
-                    uiteindelijk 3 verschillende instellingen, die alsnog
-                    exact op elkaar moeten aansluiten. Ik weet exact niks
-                    van camera's.
+                    Het originele verhaal bestond voornamelijk uit
+                    één doorlopend gesprek. Ik heb besloten om eerst
+                    een gescripte scene toe te voegen voordat het
+                    daadwerkelijke gesprek begint.
+                </p>
+
+                <p>
+                    Dit gebeurt voorafgaand aan elk gesprek en duurt
+                    ongeveer 10 tot 30 seconden. Het helpt de gebruiker
+                    om wat context te krijgen over wat er gebeurt
+                    en wat er van hen wordt verwacht.
+                </p>
+
+
+                <h4 class="subheading">
+                    Een voorbeeld: meneer Bakker
+                </h4>
+
+                <p>
+                    In het originele idee zit je direct aan tafel
+                    met meneer Bakker en moet je zelf het gesprek
+                    starten.
+                </p>
+
+                <p>
+                    Met mijn aanpassingen zie je eerst een simpele
+                    video waarin je aan je eigen tafel zit. Meneer
+                    Bakker roept vervolgens je naam en vraagt of je
+                    even naar hem toe wilt komen om over je opdracht
+                    te praten.
+                </p>
+
+                <p>
+                    Daarna beweegt de camera richting hem en begint
+                    hij met een vraag. De gebruiker geeft antwoord
+                    en vanaf dat moment kan het daadwerkelijke
+                    gesprek beginnen.
+                </p>
+
+
+                <h4 class="subheading">
+                    Waarom heb ik dit besluit genomen?
+                </h4>
+
+                <p>
+                    Tijdens Society 5.0 kwam naar voren dat veel
+                    mensen niet helemaal begrepen waar ze met
+                    de mentor over moesten praten.
+                </p>
+
+                <p>
+                    Veel mensen vielen stil en vonden dat het
+                    gesprek nogal abrupt begon. Toen we mensen
+                    vooraf een korte uitleg gaven, verliep het
+                    gesprek een stuk beter.
+                </p>
+
+                <p>
+                    Mijn doel was om deze uitleg direct in de
+                    verhaallijn te verwerken. Op deze manier krijgt
+                    de gebruiker 30 seconden tot een minuut om
+                    context te krijgen over waar diegene is,
+                    wat er gebeurt en waar het gesprek over zal gaan.
+                </p>
+
+                <div class="concept-box">
+
+                    <span class="concept-label">
+                        ONTWERPKEUZE — CONTEXT
+                    </span>
+
+                    <p>
+                        In plaats van de gebruiker direct in een
+                        gesprek te plaatsen, bouwen we de situatie
+                        eerst rustig op. Hierdoor weet de gebruiker
+                        beter wat er van hem of haar verwacht wordt.
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <!-- Visuals -->
+        <section class="section">
+
+            <div class="section-number">05</div>
+
+            <div class="section-content">
+
+                <h2>Beelden maken voor de verhaallijn</h2>
+
+                <p>
+                    De verhaallijn was inmiddels bedacht, maar er
+                    waren nog geen specifieke visuele richtlijnen
+                    voor de beelden die gemaakt moesten worden.
+                </p>
+
+                <p>
+                    Omdat onze opdrachtgever docent is, heb ik
+                    besloten om een klaslokaal na te maken.
                 </p>
 
                 <figure class="image-card large">
-                    <img src="images/sprint3/cameras.png"
-                         alt="De verschillende camera's in Blender">
+                    <img
+                        src="../images/sprint3/classroom.png"
+                        alt="Het nagemaakte HvA klaslokaal in Blender"
+                    >
+                    <figcaption>
+                        Het klaslokaal dat ik in Blender heb nagebouwd.
+                    </figcaption>
                 </figure>
 
-                <h3>Belangrijke settings</h3>
+
+                <h4 class="subheading">
+                    Modellen
+                </h4>
 
                 <p>
-                    Er 2 belangrijke settings voor de cameras: fov en de
-                    resolutie.
+                    Voor de modellen had een teamgenoot al een
+                    mannelijke stem met een soort Vlaams accent gekozen.
                 </p>
 
                 <p>
-                    De resolutie is hoe groot de beelden zijn:
-                    Een standaard monitor heeft een resolutie van 1920x1080
-                    pixels. Dat is hoe breed en hoog het beeld is. In blender
-                    kan je ook de resolutie instellen van de camera's. Er zijn
-                    3 verschillende resoluties, en die worden gedictateerd
-                    door de immersive room zelf:
-                </p>
-
-                <ol class="numbered-list">
-                    <li>Voor en achtermuur: 1058 x 799 pixels</li>
-                    <li>Linker en rechtermuur: 1358 x 799 pixels</li>
-                    <li>Vloer: 1358 x 1058 pixels</li>
-                </ol>
-
-                <p>
-                    De fov is hoeveel je kan binnen die pixels:
-                    Fov staat voor "Field of View", het betekend letterlijk
-                    hoeveel je horizontaal of verticaal kan zien.
+                    Ik wilde geen geld uitgeven aan modellen, dus
+                    mijn opties waren enigszins beperkt. Uiteindelijk
+                    ben ik bij dit model uitgekomen. Ik heb er ongeveer
+                    zes getest.
                 </p>
 
                 <p>
-                    Het probleem met blender is, als je settings van de
-                    camera instelt, en dan de resolutie veranderd, dan
-                    veranderd het hele beeld.. Dus alles kan de juiste
-                    settings hebben en tegelijktijd totaal niet aansluiten.
+                    Omdat de modellen geanimeerd moeten worden,
+                    wilde ik vooral een model met een goede rig.
+                    Zo hoef ik mezelf niet onnodig te kwellen tijdens
+                    het animeren.
                 </p>
 
-                <h3>Originele camera setup</h3>
+                <p>
+                    Daarnaast ziet dit model eruit alsof hij prima
+                    meneer Bakker zou kunnen heten.
+                </p>
+
+                <figure class="image-card">
+                    <img
+                        src="../images/sprint3/mentor.png"
+                        alt="Het gekozen 3D-model voor meneer Bakker"
+                    >
+                    <figcaption>
+                        Het gekozen karaktermodel voor de mentor.
+                    </figcaption>
+                </figure>
+
+
+                <h4 class="subheading">
+                    Waarom heb ik deze keuzes gemaakt?
+                </h4>
 
                 <p>
-                    Als we mijn originale camera's gebruiken in de testkamer
-                    dan is dit het resultaat:
+                    Tijdens een eerder gesprek met de opdrachtgever
+                    benoemde ze dat we een aula of klaslokaal konden
+                    maken.
+                </p>
+
+                <p>
+                    Ik had online een standaard klaslokaal kunnen
+                    downloaden, maar de beschikbare lokalen zagen
+                    er ontzettend cartoony uit.
+                </p>
+
+                <p>
+                    Ik wilde graag iets wat ook daadwerkelijk op
+                    een lokaal van de HvA leek. Daarom heb ik besloten
+                    om het lokaal zelf na te maken.
+                </p>
+
+                <p>
+                    Dit is uiteindelijk goed gelukt, want één van
+                    de testers benoemde:
+                </p>
+
+                <div class="feedback-card">
+
+                    <span class="feedback-label">
+                        TESTERFEEDBACK
+                    </span>
+
+                    <p>
+                        "Je kan echt zien dat dit een HvA lokaal is,
+                        best cool."
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <!-- Animation -->
+        <section class="section">
+
+            <div class="section-number">06</div>
+
+            <div class="section-content">
+
+                <h2>Animeren</h2>
+
+                <p>
+                    Ik ben inmiddels een beetje moe van het typen,
+                    dus ik houd dit onderdeel kort.
+                </p>
+
+                <p>
+                    Op basis van de verhaallijn heb ik vier verschillende
+                    scenes gemaakt. Hiervoor heb ik de modellen,
+                    het klaslokaal en de verschillende camerastandpunten
+                    gecombineerd om de situaties visueel uit te werken.
                 </p>
 
                 <figure class="image-card large">
-                    <img src="images/sprint3/attempt1.png"
-                         alt="De eerste poging met de originele camera setup">
-                    <figcaption>Originele camera setup</figcaption>
+
+                    <video
+                        src="../images/sprint3/front.mp4"
+                        controls
+                        playsinline
+                        preload="metadata"
+                    >
+                        Your browser does not support video.
+                    </video>
+
+                    <figcaption>
+                        Een voorbeeld van één van de geanimeerde scenes.
+                    </figcaption>
+
                 </figure>
 
-                <h3>Experimenteren met camera setup</h3>
+            </div>
+        </section>
+
+
+
+        <!-- Testing -->
+        <section id="testen" class="section">
+
+            <div class="section-number">07</div>
+
+            <div class="section-content">
+
+                <h2>Feedback van het testen</h2>
 
                 <p>
-                    Na 5 pogingen met de settings ben ik hierop uitgekomen.
+                    Aan het einde van de sprint heb ik een test
+                    uitgevoerd met de opdrachtgever en twee
+                    psychologiestudenten.
+                </p>
+
+                <p>
+                    Ik had een versie met een lagere resolutie
+                    van de basisverhaallijn gemaakt. Daarnaast
+                    had ik in DaVinci Resolve een mock-up gemaakt
+                    van de uiteindelijke UI die over de video
+                    heen moet komen.
+                </p>
+
+                <p>
+                    Zo konden de testers alvast een beeld krijgen
+                    van hoe het uiteindelijke resultaat eruit
+                    zou kunnen zien.
                 </p>
 
                 <figure class="image-card large">
-                    <img src="images/sprint3/attempt5.png"
-                         alt="De vijfde poging met aangepaste camera instellingen">
+                    <img
+                        src="../images/sprint3/camera.png"
+                        alt="Testopstelling met de immersive projectie"
+                    >
+                    <figcaption>
+                        De testopstelling tijdens het bekijken van de beelden.
+                    </figcaption>
                 </figure>
 
-                <p>
-                    Dit is close, maar nog niet goed eigenlijk.
-                </p>
 
-                <h3>Suspend all logic</h3>
+                <!-- Visual feedback -->
+                <article class="process-step">
 
-                <p>
-                    Ik had al meerdere dingen uitgeprobeerd en was uren bezig.
-                    Ik had met AI gekeken of ik de settings goedkreeg en niks
-                    werkte. Het beste resultaat wat ik behaalde was poging 5.
-                </p>
+                    <h4 class="subheading">
+                        Beelden algemeen
+                    </h4>
 
-                <p>
-                    Ik had een pauze genomen en kwam toen op een idee. Wat
-                    als ik geen logica toepast maar gewoon de cameras blijf
-                    schalen tot ze perfect aansluiten op de muren van de
-                    immersive room...?
-                </p>
+                    <p>
+                        De testers herkenden direct dat de beelden
+                        gebaseerd waren op een HvA-lokaal.
+                    </p>
 
-                <figure class="image-card large">
-                    <img src="images/sprint3/blender_base.png"
-                         alt="De immersive room nagemaakt in Blender">
-                </figure>
+                    <p>
+                        De grootste feedback ging voornamelijk over
+                        de plaatsing van de mentor op de rechtermuur.
+                        Ik merkte dat de meeste mensen niet doorhadden
+                        dat de mentor van muur wisselde.
+                    </p>
 
-                <p>
-                    Dit zijn de muren van de immersive room nagemaakt in
-                    blender. Het zwarte gedeelte erbinnen zijn de cameras.
-                    Ik heb ze geselecteerd en letterlijk gewoon de settings
-                    aangepast tot elke muur perfect in beeld kwam.
-                </p>
+                    <p>
+                        Je moet namelijk echt drie meter naar rechts
+                        kijken om hem te zien. Hierdoor valt de
+                        verandering niet direct op.
+                    </p>
 
-                <div class="success-section">
-                    <h3>Succes!</h3>
+                    <p>
+                        De opdrachtgever gaf het advies om de mentor
+                        in de andere hoek te plaatsen, zodat hij
+                        makkelijker zichtbaar is.
+                    </p>
+
+                    <p>
+                        Dit vond ik een goede tip. Ik moet hiervoor
+                        wel de camerapositie een beetje aanpassen
+                        zodat verschillende objecten niet over elkaar
+                        heen vallen.
+                    </p>
+
+                </article>
+
+
+                <!-- Storyline feedback -->
+                <article class="process-step">
+
+                    <h4 class="subheading">
+                        Verhaallijn aanpassingen
+                    </h4>
+
+                    <p>
+                        Doordat er een kleine introductie aanwezig
+                        was, was het voor iedereen direct duidelijk
+                        waar ze met de mentor en docent over moesten
+                        praten.
+                    </p>
+
+                    <p>
+                        Dat was dus een goede toevoeging.
+                    </p>
+
+                    <p>
+                        Mensen vonden de geluidseffecten die ik
+                        had toegevoegd ook leuk.
+                    </p>
+
+                    <p>
+                        Omdat de mentor uiteindelijk gemeen moet
+                        worden, had ik een aantal voice-overs gemaakt
+                        om te kijken hoe gemeen ik hem kon laten
+                        klinken en of de opdrachtgever dat niveau
+                        wilde.
+                    </p>
+
+                    <p>
+                        Uiteindelijk was ze blij met hoe gemeen
+                        de mentor geworden was. Ik had de docent
+                        in eerste instantie wat aardiger gemaakt,
+                        maar de opdrachtgever wilde graag dat de
+                        docent net zo gemeen zou worden als de mentor.
+                    </p>
 
                     <figure class="image-card large">
-                        <img src="images/sprint3/attempt6.png"
-                             alt="Het resultaat van de zesde camera poging">
+                        <img
+                            src="../images/sprint3/test.png"
+                            alt="Mock-up van de test en de uiteindelijke ervaring"
+                        >
                     </figure>
 
                     <p>
-                        Dit is goed genoeg voor de immersive room.
-                        Niet meer aanraken!
-                    </p>
-                </div>
-
-                <div class="text-highlight">
-                    <h3>Reflectie / wat ik heb geleerd</h3>
-                    <p>
-                        Tijdens het maken heirvan heb ik wel opgezocht hoe
-                        vcameras werken en wat de settings betekenen en doen.
-                        Ik heb meerdere keren gezocht naar "How to adjust
-                        blender camera for immersive wall", maar uiteraard
-                        vind je enkel videos van mensen die het al gedaan
-                        hebben maar niet hoe.
+                        Ook vonden de testers het leuk dat ik de
+                        interne gedachten van de gebruiker had
+                        meegenomen in de ervaring.
                     </p>
 
+                </article>
+
+
+                <!-- Animation feedback -->
+                <article class="process-step">
+
+                    <h4 class="subheading">
+                        Animatie
+                    </h4>
+
                     <p>
-                        Uiteindelijk was het handig geweest als ik had
-                        gezocht naar "How to frame a camera to cover an area
-                        perfectly". Dan was ik mogelijk eerder uitgekomen om
-                        de camera te schalen naar een digitale versie van de
-                        muur in plaats van settings aan te passen. Maar
-                        hindsight komt helaas altijd te laat, misschien voor
-                        de volgende keer :)
+                        Een teamgenoot kwam met het idee om motion
+                        capture te gebruiken voor de karakters.
                     </p>
-                </div>
+
+                    <p>
+                        De opdrachtgever en testers hadden zelf
+                        geen negatieve feedback over de animaties.
+                        Ik ga er daarom vanuit dat ze hier tevreden
+                        mee waren.
+                    </p>
+
+                    <p>
+                        Zelf zou ik graag motion capture willen
+                        gebruiken om te kijken of ik de animaties
+                        iets realistischer kan laten aanvoelen.
+                    </p>
+
+                    <p>
+                        Maar dit staat voorlopig onderaan de lijst
+                        van alles wat volgende sprint nog gedaan
+                        moet worden.
+                    </p>
+
+                </article>
+
             </div>
         </section>
 
 
-        <!-- 04 CONTROLLER -->
-        <section class="content-section">
-            <div class="section-heading">
-                <span class="section-number">04</span>
-                <div>
-                    <p class="eyebrow">Software development</p>
-                    <h2>Controller</h2>
-                </div>
-            </div>
+
+        <!-- Reflection -->
+        <section id="reflectie" class="section">
+
+            <div class="section-number">08</div>
 
             <div class="section-content">
-                <p>
-                    Voor de immersive room is er een template voor waar elke
-                    video moet staan zodat het werkt met de beamers in de
-                    kamer.
-                </p>
 
-                <figure class="image-card large">
-                    <img src="images/sprint2/IR_dimensions.jpg"
-                         alt="De afmetingen en indeling van de immersive room">
-                </figure>
+                <h2>Reflectie</h2>
 
-                <p>Uiteindelijk heb ik deze pagina's gemaakt.</p>
 
-                <h3>Storyline</h3>
+                <div class="reflection">
 
-                <p>
-                    Omdat de gebruiker in een microfoon moet praten, is he
-                    tonmogelijk om gewoon een enkele video te hebben die non
-                    stop afspeelt. Hierdoor hadden we een systeem nodig dat
-                    door middel van code kan stoppen op het moment dat het
-                    nodig is, en weer verder kan gaan wanneer de gebruiker
-                    input heeft gegeven. Hiervoor heb ik een storyline
-                    venster gemaakt. Dit gebruikt een Yaml bestand, dat een
-                    verhaallijn heeft en alle videos die nodig zijn.
-                </p>
-
-                <figure class="image-card large">
-                    <img src="images/sprint3/storyline.png"
-                         alt="Het storyline venster">
-                    <figcaption>Storyline</figcaption>
-                </figure>
-
-                <h3>Edit viewer</h3>
-
-                <p>
-                    Van veel medewerkers had ik gehoord dat het niet leuk is
-                    om alle muren goed uitgelijnd te krijgen. Dus ik maakte
-                    het mijzelf lekker makkelijk en heb gewoon wat code
-                    geschreven zodat we live de positie en groote van de
-                    muren kunnen aanpassen. Ik had geen zin om telkens heen
-                    en weer te moeten gaan enkel om dingen passend te krijgen.
-                    Dit was enorm pretig want de template was niet correct
-                    voor 4K projectie. Dus toen konden we live gewoon de
-                    dimensies aanpassen zodat elke muur netjes bedekt was
-                    door onze videos.
-                </p>
-
-                <figure class="image-card large">
-                    <img src="images/sprint3/ViewerEdit.png"
-                         alt="De Edit Viewer interface">
-                    <figcaption>Edit viewer</figcaption>
-                </figure>
-
-                <h3>Viewer</h3>
-
-                <p>
-                    Dit is de viewer. Het is een eigen window die de
-                    Immersive Lab gebruikt om beelden op elke muur te
-                    projecteren. Omdat ik niet wist of we 1080p of 4k zouden
-                    draaien (en wat goed werkte) heb ik uiteindelijk ook
-                    gewoon gekozen om deze window schalend te maken. Dus hij
-                    kan automatisch naar 1080p of 4k schalen, en houd de
-                    aspect ratio intact. Dit heeft eigenlijk enorm geholpen
-                    want we hebben echt 3 verschillende resoluties
-                    uitgeprobeert en het werkte elke keer gewoon goed.
-                </p>
-
-                <p>
-                    Dus de medewerker van het Lab heeft een template waarbij
-                    je de 5 videos op in 1 video kan mergen. Maar wij hebben
-                    eigenlijk meerdere lagen nodig. Bijvoorbeeld wij willen
-                    een hartslag op 1 van de muren tonen, en dan van muur
-                    switchen. Of wij willen een subtitles tonen op 1 van de
-                    muren. Hierdoor heb ik gekozen om 5 verschillende areas
-                    te maken. En binnen elke area/vlak heb je verschillende
-                    lagen.
-                </p>
-
-                <p>
-                    Hierdoor is het makkelijk om een overlay bovenop een
-                    bestaande video te leggen.
-                </p>
-
-                <figure class="image-card large">
-                    <img src="images/sprint3/viewer.png"
-                         alt="De uiteindelijke viewer">
-                    <figcaption>Viewer</figcaption>
-                </figure>
-
-                <div class="text-highlight">
-                    <h3>Waarom heb ik deze keuzes gemaakt</h3>
+                    <h3>Hoe is de sprint verlopen?</h3>
 
                     <p>
-                        Als ict'er is het makkelijk om backups te bouwen.
-                        Ik vind het efficienter te om een kleine functionaliteit
-                        te bouwen waarbij je live kan troubleshooten. Tevens
-                        is het project niet super lang en halverwege zijn we
-                        pas begonnen bij de immersive lab. Ik wou niet telkens
-                        langskomen, oh beelden zijn niet goed, en weer
-                        terugkomen. Dankzij al deze dingen is het makkelijk
-                        geweest om aanpassingen te maken en daar notities
-                        over te maken.
+                        Deze sprint is goed verlopen. Over het algemeen
+                        is de opdrachtgever blij met de progressie
+                        die we hebben gemaakt.
                     </p>
 
                     <p>
-                        En de storyline gedeelte was ook gewoon noodzakelijk
-                        om het als geheel te laten werken. Deze applicatie
-                        wordt de uiteindelijk "brain" van het systeem dat
-                        alles gezamelijk kan aansturen.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- 05 VERHAALLIJN -->
-        <section class="content-section">
-            <div class="section-heading">
-                <span class="section-number">05</span>
-                <div>
-                    <p class="eyebrow">Experience design</p>
-                    <h2>Verhaallijn aanpassen</h2>
-                </div>
-            </div>
-
-            <div class="section-content">
-                <p>
-                    Voor de immersive room wilt onze opdrachtgever (Barbara,
-                    docent Hva) graag 1 uitgewerkte scenario hebben waar je
-                    als gebruiker doorheen kan lopen. Een teamgenoot had een
-                    scenario verzonnen; mijn taak was om deze scenario
-                    visueel na te maken.
-                </p>
-
-                <p>
-                    Origineel was het verhaallijn voornamelijk 1 lopende
-                    gesprek. Ik heb besloten om een gescripte scene te
-                    creeren voordat het gesprek begint. Dit gebeurt vooraf
-                    elk gesprek en duurt 10 tot 30 seconden, maar het helpt
-                    de gebruiker om wat context te krijgen over wat er van
-                    hun verwacht wordt.
-                </p>
-
-                <p>
-                    Bijvoorbeeld meneer bakker wilt met je praten over je
-                    opdracht. In het originele idee zit je direct aan tafel
-                    met meneer bakker en zelf het gesprek moet starten. Met
-                    mijn aanpassingen zie je eerst een simpele video waar je
-                    aan je eigen tafel zit. Meneer Bakker roept je naam en
-                    vraagt of je even naar hem toe wil komen om over je
-                    opdracht te praten. Dan beweegt de camera naar hem en
-                    begint hij met een vraag. Dan geeft de gebruiker antwoord
-                    en vanaf dat punt kan er een gesprek gestart worden.
-                </p>
-
-                <div class="text-highlight">
-                    <h3>Waarom heb ik dit besluit genomen?</h3>
-
-                    <p>
-                        Tijdens society 5.0 kwam naar voren dat veel mensen
-                        niet helemaal begrepen waar ze over moesten praten
-                        met de mentor. Veel mensen vielen stil en het gesprek
-                        begon volgens hun te abrubt. Toen we mensen een korte
-                        uitleg gaven voordat ze met de mentor praate verliep
-                        het veel beter.
+                        De dag na de test stuurde ze zelfs nog een
+                        Teams-bericht met de vraag of we de beelden
+                        konden delen, zodat ze deze met studenten
+                        uit haar klas kon laten zien.
                     </p>
 
                     <p>
-                        Mijn doel was om deze uitleg in te bakken door middel
-                        van de verhaallijn. Dit is dan 30 seconden tot 1 minuut
-                        wat de gebruiker helpt om context te krijgen van waar
-                        ze zijn, wat er gebeurt en wat er van hun verwacht
-                        wordt om over te praten.
+                        Ik ga er dus vanuit dat dat een goed teken is!
                     </p>
+
                 </div>
-            </div>
-        </section>
 
 
-        <!-- 06 BEELDEN MAKEN -->
-        <section class="content-section">
-            <div class="section-heading">
-                <span class="section-number">06</span>
-                <div>
-                    <p class="eyebrow">Environment & characters</p>
-                    <h2>Beelden maken voor de verhaallijn</h2>
-                </div>
-            </div>
+                <div class="reflection">
 
-            <div class="section-content">
-                <p>
-                    Het verhaallijn was al verzonnen, maar er waren geen
-                    specifieke visuele dingen waar de beelden aan moet voldoen.
-                </p>
-
-                <p>
-                    Omdat onze opdrachtgever van een docent is, heb ik onze
-                    klaslokaal nagemaakt.
-                </p>
-
-                <figure class="image-card large">
-                    <img src="images/sprint3/classroom.png"
-                         alt="Het nagemaakte klaslokaal">
-                </figure>
-
-                <h3>Modellen</h3>
-
-                <p>
-                    Voor de modellen had een teamgenoot al een mannelijke stem
-                    met soort van vlaams accent gekozen. Ik wou geen geld
-                    uitgeven dus de opties waren gelimiteerd. Uiteindelijk
-                    ben ik tot deze model uitgekomen. Ik had er een stuk of
-                    6 getest. Maar omdat de modellen geanimeerd moeten worden,
-                    wou ik een model welke een goede rig had zodat ik niet
-                    onnodig hoef te lijden. Daarnaast lijkt het alsof deze
-                    model "Bakker" zou kunnen heten.
-                </p>
-
-                <figure class="image-card large">
-                    <img src="images/sprint3/mentor.png"
-                         alt="Het 3D-model van mentor Bakker">
-                    <figcaption>Het model van mentor Bakker</figcaption>
-                </figure>
-
-                <div class="text-highlight">
-                    <h3>Waarom heb ik deze keuzes gemaakt?</h3>
+                    <h3>Wat heb ik geleerd?</h3>
 
                     <p>
-                        In een eerdere gesprek met de opdrachtgever benoemde
-                        ze dat we een aula of klaslokaal konden maken. Ik had
-                        de mogelijkheid om online een standaard klaslokaal
-                        te vinden, maar de lokalen zager er super cartoony uit.
-                        Ik wou graag ook iets wat op een lokaal van de Hva
-                        leek, dus ik had besloten om het na te maken. En dit
-                        is goed gelukt want 1 van de testers benoemde "je kan
-                        echt zien dat dit een Hva lokaal is, best cool".
+                        Ik heb enorm veel geleerd over Blender.
+                        En tegelijkertijd geleerd hoeveel er nog
+                        meer te leren valt.
                     </p>
+
+                    <p>
+                        Van camera-calibratie tot modelleren en
+                        animeren. Ik heb deze sprint met behoorlijk
+                        wat nieuwe technische uitdagingen te maken
+                        gehad.
+                    </p>
+
+                    <p>
+                        Vooral het oplossen van het camera-probleem
+                        heeft me geleerd dat je soms beter even
+                        afstand kunt nemen van een probleem, in
+                        plaats van steeds dezelfde aanpak te blijven
+                        proberen.
+                    </p>
+
                 </div>
+
+
+                <div class="reflection">
+
+                    <h3>Wat zou ik anders doen?</h3>
+
+                    <p>
+                        Ik heb naar mijn gevoel deze sprint wel
+                        een beetje te veel gedaan.
+                    </p>
+
+                    <p>
+                        Dat is voornamelijk veroorzaakt door mijn
+                        eigen ambities. Ik had het ook gewoon
+                        simpeler kunnen houden.
+                    </p>
+
+                    <p>
+                        Maar dat wilde ik niet :)
+                    </p>
+
+                    <p>
+                        Achteraf gezien had ik misschien wat meer
+                        tijd kunnen besteden aan het prioriteren
+                        van de verschillende onderdelen. Toch ben
+                        ik blij met wat ik uiteindelijk heb kunnen
+                        neerzetten.
+                    </p>
+
+                </div>
+
             </div>
         </section>
 
 
-        <!-- 07 ANIMEREN -->
-        <section class="content-section">
-            <div class="section-heading">
-                <span class="section-number">07</span>
-                <div>
-                    <p class="eyebrow">Animation</p>
-                    <h2>Animeren</h2>
-                </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+
+            <div>
+                <span class="footer-label">ANIMA / DEVLOG</span>
+                <p>Sprint 03 — Immersion & Implementation</p>
             </div>
 
-            <div class="section-content">
-                <p>
-                    Ik ben moe van typen. kheb 4x van dit soort scenes
-                    gemaakt op basis van de verhaallijn:
-                </p>
-
-                <figure class="image-card large video-card">
-                    <video
-                        src="images/sprint3/front.mp4"
-                        controls
-                        playsinline
-                        preload="metadata">
-                        Your browser does not support video.
-                    </video>
-                    <figcaption>Een van de geanimeerde scenes voor de verhaallijn.</figcaption>
-                </figure>
-            </div>
-        </section>
-
-
-        <!-- 08 FEEDBACK -->
-        <section class="content-section">
-            <div class="section-heading">
-                <span class="section-number">08</span>
-                <div>
-                    <p class="eyebrow">User testing</p>
-                    <h2>Feedback van het testen</h2>
-                </div>
+            <div class="footer-right">
+                <span>Creative Technology</span>
             </div>
 
-            <div class="section-content">
-                <p>
-                    Aan het einde van de sprint heb ik een test gedaan met
-                    de opdrachtegever en 2 psychologie studenten. Ik had een
-                    lage resolutie versie van de basis verhaallijn gemaakt
-                    en een mockup in Davinci resolve van de uiteindelijke UI
-                    die over de video heen moet komen zodat hun een concept
-                    kunnen hebben van het eindresultaat.
-                </p>
-
-                <figure class="image-card large">
-                    <img src="images/sprint3/camera.png"
-                         alt="De cameraweergave tijdens het testen">
-                </figure>
-
-                <h3>Beelden Algemeen</h3>
-
-                <p>
-                    Ze herkende direct dat de beelden gemaakt waren van een
-                    Hva lokaal. De grootste feedback was voornamelijk de
-                    plaatsing van de mentor op de rechtermuur. Ik merkte dat
-                    grotendeels van de mensen het niet opviel dat de mentor
-                    van muur switchte (je moet dan echt 3 meter naar rechts
-                    kijken om die te ien). De opdrachtgever gaf het advies om
-                    de mentor dan in de andere hoek te zetten zodat die
-                    makkelijker te zien is. Dit is een goede tip. Ik moet dan
-                    wel de camera positie een beetje aanpassen zodat dingen
-                    niet overlappen.
-                </p>
-
-                <h3>Verhaallijn aanpassingen</h3>
-
-                <p>
-                    Doordat er een kleine introductie was, was het direct voor
-                    iedereen duidelijk waar je met de mentor en docent over
-                    zou moeten praten. Dat was goed gedaan. Mensen vonden de
-                    geluidseffecten etc die ik toegevoegd had ook leuk.
-                </p>
-
-                <p>
-                    Omdat de mentor gemeen moet worden, had ik een aantal
-                    voiceovers gemaakt om te kijken hoe gemeen ik kon zijn
-                    en of de opdrachtgever die level wou hebben. Uiteindelijk
-                    was ze blij met hoe gemeen de mentor uiteindelijk was.
-                    Ik had de docent aardiger gemaakt maar ze wou graag dat
-                    de docent net zo gemeen zou worden als de mentor.
-                </p>
-
-                <figure class="image-card large">
-                    <img src="images/sprint3/test.png"
-                         alt="Een screenshot van de test">
-                </figure>
-
-                <p>
-                    Ook vonden ze het leuk dat ik de interne gedachtes had
-                    meegneomen.
-                </p>
-
-                <h3>Animatie</h3>
-
-                <p>
-                    Een teamgenoot gaf het idee om motion capture te gebruiken
-                    voor de karakters. De opdrachtgever en testers zelf hadden
-                    niet iets negatiefs te zeggen over de animaties. Dus hun
-                    zijn denk ik tevreden.
-                </p>
-
-                <p>
-                    Ik zou wel graag motion captuire willen gebruiken om te
-                    kijken of ik het iets echter' kan laten voelen. Maar het
-                    staat onderaan de lijst van alles wat volgende sprint
-                    nog gedaan moet worden.
-                </p>
-            </div>
-        </section>
-
-
-        <!-- 09 REFLECTIE -->
-        <section class="content-section reflection-section">
-            <div class="section-heading">
-                <span class="section-number">09</span>
-                <div>
-                    <p class="eyebrow">Looking back</p>
-                    <h2>Reflectie</h2>
-                </div>
-            </div>
-
-            <div class="section-content">
-                <p>
-                    Deze sprint is goed verlopen, over het algemeen is de
-                    opdrachtgever blij met de progressie die we hebben
-                    gemaakt. Ze had de dag na de test nog een teams bericht
-                    gestuurd om te vragen om de beelden zodat ze deze met
-                    studenten van haar klas kon delen. Dus ik ga ervanuit
-                    dat dat een goed teken was.
-                </p>
-
-                <p>
-                    Ik heb enorm veel geleerd over blender, en geleerd hoeveel
-                    meer er is om te leren.
-                </p>
-
-                <p>
-                    Ik heb naar mijn gevoel wel wat te veel gedaan. Maar dat
-                    is voornamelijk veroorzaakt door mijn eigen ambities,
-                    ik had het ook gewoon simpel kunnen houden. Maar dat
-                    wou ik niet :)
-                </p>
-            </div>
-        </section>
-
-
-        <!-- FOOTER -->
-        <footer class="page-footer">
-            <p>Development Log — Sprint 03</p>
-            <a href="sprint2.html">← Previous sprint</a>
-            <a href="sprint1.html">Back to Sprint 1</a>
         </footer>
 
     </main>
